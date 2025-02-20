@@ -1,0 +1,6 @@
+.env
+.venv
+*pycache*
+*cache*
+test-db
+domain_discovery.log
