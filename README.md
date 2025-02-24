@@ -24,19 +24,11 @@ cp .env.example .env
 
 ## Usage
 
-### dd2.py script
-
-dd2.py is a simple script which runs `git pull` and `poetry install`, ensuring
-automatic updates
-
-```bash
-poetry run python dd2.py --help
-```
-
-### just the script without updates
-
 ```bash
 poetry run python src/main.py --help
+
+# Or docker
+docker run -it vulnman/domain-discovery poetry run python src/main.py --help
 ```
 
 ## Testing

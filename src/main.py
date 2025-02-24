@@ -21,7 +21,7 @@ def dd_bbot(skip_scan: bool, event_file_path: str, target: str) -> list[Domain]:
 @click.command()
 @click.option("--skip-scan", is_flag=True, help="Skip scanning")
 @click.option("--event-file-path", help="Path to the event file")
-@click.option("--skip-lubos", is_flag=True, default=False, help="Don't run Lubos scanner")
+@click.option("--skip-lubos", is_flag=True, default=False, help="Don't run Lubos scanner, Not available currently")
 @click.option("--skip-bbot", is_flag=True, default=False, help="Don't run Bbot scanner")
 @click.option("-t", "--target", help="Target domain")
 def main(skip_scan: bool, event_file_path: str, skip_lubos: bool, skip_bbot: bool, target: str):
