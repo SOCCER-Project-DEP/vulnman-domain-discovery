@@ -31,15 +31,9 @@ poetry run python src/main.py --help
 docker run -it vulnman/domain-discovery poetry run python src/main.py --help
 ```
 
-## Testing
+## Custom module
 
-1. Install the dependencies with poetry, also sqlite3 is required.
-1. Fill in the `.env` file.
-1. Run the tests.
-
-```bash
-poetry run pytest
-```
+You can create custom modules to fetch domains from other sources. Put desired python file to `src/modules` directory and ensure that module has `main()` function that returns list of Domains (data model defined `src/lib/models.py`).
 
 ## Debbuging && FAQ
 
